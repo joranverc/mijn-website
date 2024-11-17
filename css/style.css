@@ -9,6 +9,11 @@
     background-color: #72c7e0;
 }
 
+.sticky{
+  position: sticky;
+  right: 0
+}
+
 
 .footer {
   position: fixed;
