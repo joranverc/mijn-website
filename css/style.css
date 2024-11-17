@@ -9,9 +9,10 @@
     background-color: #72c7e0;
 }
 
-div.sticky{
+.fixed{
   position: fixed;
   top: 0;
+  right: auto;
 }
 
 
