@@ -9,9 +9,9 @@
     background-color: #72c7e0;
 }
 
-.sticky{
+div.sticky{
   position: sticky;
-  top: 0
+  top: 0;
 }
 
 
