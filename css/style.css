@@ -1,3 +1,4 @@
+
 .blauw {
     background-color: #0769e0;
   }
@@ -15,6 +16,12 @@
   right: auto;
 }
 
+.sticky {
+  position: sticky;
+  top: 0;
+  background-color: green;
+  border: 2px solid #4CAF50;
+}
 
 .footer {
   position: fixed;
