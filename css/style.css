@@ -10,6 +10,10 @@
     background-color: #72c7e0;
 }
 
+.donker_blauw{
+  background-color: #05428d;
+}
+
 .fixed{
   position: fixed;
   top: 0;
@@ -19,8 +23,8 @@
 .sticky {
   position: sticky;
   top: 0;
-  background-color: green;
-  border: 2px solid #4CAF50;
+  color: white;
+  background-color:#05428d;
 }
 
 .footer {
@@ -31,4 +35,10 @@
   background-color: #0769e0;
   color: white;
   text-align: center;
+  border: 2px solid #1e459ea0
+}
+
+.infront
+{
+  z-index: 9;
 }
