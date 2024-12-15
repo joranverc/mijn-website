@@ -39,8 +39,16 @@
                 <li class="nav-item">
                     <a class="nav-link" href="portfolio.html">Portfolio</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="project.html">Project</a>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Projecten</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="project_cybersec_tokens.html">cybersecurity_json_web_tokens</a></li>
+                    <li><a class="dropdown-item" href="project_serverbeheer.html">serverbeheer</a></li>
+                    <li><a class="dropdown-item" href="project_blank1.html">blank1</a></li>
+                    <li><a class="dropdown-item" href="project_blank2.html">blank2</a></li>
+                    <li><a class="dropdown-item" href="project_blank3.html">blank3</a></li>
+                    <li><a class="dropdown-item" href="project_blank4.html">blank4</a></li>
+                  </ul>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" href="contact.html">Contact</a>
@@ -49,51 +57,59 @@
             </div>
         </div>
     </nav>
-    <header class="pt-3 text-center">
-        <h2>contact</h2>
-        <p>joran vercauteren<br>
-          <a href="mailto:joran.verc@gmail.com">joran.verc@gmail.com</a><br>
-          +32 4 68 13 48 00
-        </p>
+    <header class="pt-5 text-center titel_sticky">
+        <h2>contact joran vercauteren</h2>
     </header>
     <main class="row justify-content-center">
-      <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
-        <div class="form-group">
-          <label for="name">Name:</label>
+      <form class="col-md-9" name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+        <section class="form-group">
+          <label for="naam">Naam:</label>
           <input type="text" class="form-control" id="name" name="name" required>
-        </div>
-        <div class="form-group">
+        </section>
+        <section class="form-group">
           <label for="email">Email:</label>
           <input type="email" class="form-control" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-          <label for="subject">Subject:</label>
+        </section>
+        <section class="form-group">
+          <label for="onderwerp">onderwerp:</label>
           <input type="text" class="form-control" id="subject" name="subject" required>
-        </div>
-        <div class="form-group">
-          <label for="message">Message:</label>
+        </section>
+        <section class="form-group">
+          <label for="bericht">bericht:</label>
           <textarea class="form-control" rows="10" id="message" name="message" required></textarea>
-        </div>
-        <div class="form-group">
+        </section>
+        <section class="form-group">
           <div data-netlify-recaptcha="true"></div>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        </section>
+        <button type="Indienen" class="btn btn-primary">Indienen</button>
       </form>
-      <article class="col-md-6">
-          <img src="assets/img/joran-foto.JPG" alt="foto" style="width:100%">
+      <article class="col-md-3 text-center">
+          <img src="assets/img/joran-foto.JPG" alt="foto" style="width: 400px;">
       </article>
-      <div class="pt-1 col-md-4 align-self-center">
-          <h2>wie ben ik</h2>
-          <p>Een graduaatsstudent die vol leergierigheid in de it wereld wilt beginnen ervaring op te doen. Ik ben een
-          nieuwschierig , sportief
-          persoon die niet snel gefrustreerd wordt
-          </p>
+      <article class="pt-1 col-md-3 text-center align-self-center">
+        <h2>vaardigheden</h2>
+          <div class="donker_blauw_text">
+          <h4>-python</h4>
+          <h4>-Powershell</h4>
+          <h4>-Serverbeheer</h4>
+          <h4>-sql</h4>
+          <h4>-cybersecurity</h4>
           <br>
-          <br>
-          <br>
-          <section class="row">
-            <div id="Map" class="col-12"></div>
-          </section>
+          </div>
+      </article>
+      <article class="pt-1 col-md-3 align-self-center">
+        <h2>wie ben ik</h2>
+        <p>Een graduaatsstudent die vol leergierigheid in de it wereld wilt beginnen ervaring op te doen. Ik ben een
+        nieuwschierig , sportief
+        persoon die niet snel gefrustreerd wordt
+        </p>
+        <br>
+      </article>
+      <section class="col-md-3 text-center">
+        <h4>woonplaats kalmthout:</h4>
+        <div id="Map" class="col-12"></div>
+        <br>
+      </section>
     </main>
     <footer class="footer infront">
         <p>&copy; 2024 joran vercauteren</p>

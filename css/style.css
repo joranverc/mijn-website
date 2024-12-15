@@ -14,6 +14,10 @@
   background-color: #05428d;
 }
 
+.donker_blauw_text{
+  color: #05428d;
+}
+
 .fixed{
   position: fixed;
   top: 0;
@@ -25,6 +29,12 @@
   top: 0;
   color: white;
   background-color:#05428d;
+}
+
+.titel_sticky{
+  position: sticky;
+  top: 0;
+  z-index: 21;
 }
 
 .footer {

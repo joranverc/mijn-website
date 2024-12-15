@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>blank1</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer>
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="p-3 lichtblauw">
+    <nav class="navbar navbar-expand-md bg-light justify-content-center sticky infront">
+        <div class="container-fluid m-3">
+            <a class="navbar-brand" href="index.html"><img src="assets/img/420ddf14ef714bd1a1785fd5662d1a06-free.png" alt="LOGO"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navdata">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-center" id="navdata">
+                <ul class="navbar-nav">
+                <li class="nav-item ">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Projecten</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="project_cybersec_tokens.html">cybersecurity_json_web_tokens</a></li>
+                      <li><a class="dropdown-item" href="project_serverbeheer.html">serverbeheer</a></li>
+                      <li><a class="dropdown-item active" href="project_blank1.html">blank1</a></li>
+                      <li><a class="dropdown-item" href="project_blank2.html">blank2</a></li>
+                      <li><a class="dropdown-item" href="project_blank3.html">blank3</a></li>
+                      <li><a class="dropdown-item" href="project_blank4.html">blank4</a></li>
+                    </ul>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <h1 class="p-3 text-center">Project</h1>
+    </header>
+    <div class="row justify-content-center">
+    <main class="col-12 col-md-9 p-3">
+         <section class="text-center">
+                <h2>cybersec</h2>
+                <h2>json web tokens</h2>
+        </section>
+        <section class="row justify-content-center">
+           <div class="pt-3 col-md-6 align-self-center">
+                   <p>Met het surfen op het internet komen wij allemaal in aanraking met veel verschillende websites. Voor veel websites en services op het internet hebt u een account nodig en omdat mensen niet graag inloggen wordt deze authenticatie bijgehouden op verschillende manieren. In deze Magnus opus ga ik het hebben over web tokens die daarvoor gebruikt kunnen worden. </p>
+            </div>
+            <article class="pt-3 col-md-6">
+               <img src="assets/img/token-based.png" style="width:100%" alt="cybersec">
+            </article>
+        </section>
+        <section class="row justify-content-center">
+            <article class="pt-3 col-md-6 order-md-2">
+                <h5>Sessies of cookie-based authentication:</h5>
+                <p>Wanneer iemand zich authentiseert wordt er op de server er sessie gemaakt met de informatie van user gekoppeld aan credentials. De credentials worden in cookies doorgestuurd en elke keer dat de user zich moet authentiseren word de credentials van de user op de server opgezocht.</p>
+                <h5>Voordelen:</h5>
+                <p>Omdat de server alle records heeft is het makkelijk om acces weg te nemen en is er veel trust dat de user gegevens juist zijn. Er is minder verkeer over het netwerk want credentials kan 1 string zijn.</p>
+                <h5>Nadelen:</h5>
+                <p>Voor veel users moet de database die de sessies beheerd overall bereikbaar zijn en heel veel request verwerken dit kan voor vertraging zorgen</p>
+            </article>
+            <article class="pt-3 col-md-6 orde-md-1">
+                <img src="assets/img/cybersec.jpg" style="width: 100%;" alt="cybersec">
+            </article>
+        </section>
+        <section class="row justify-content-center">
+            <article>
+                <h5>Json Web tokens:</h5>
+                <p>Json web tokens zijn bijna hetzelfde als sessies met een groot verschil dat de userinformatie niet op de server in een database wordt opgeslagen maar in de string die word gegeven aan de user.Een json web token heeft 3 secties header met informatie over encryptie algoritme dat gebruikt wordt. De payload met informatie bv username, id, tijd dat de token geldig is. De signature met de hash om ervoor to zorgen dat er niks is veranderd met de token.</p>
+
+                <h5>Voordelen:</h5>
+                <p>Snelheid van authenticatie hoger omdat er geen vraag naar een database is.
+                Schaalbaarheid is ook groter niet gelimiteerd door database</p>
+
+                <h5>Nadelen:</h5>
+                <p>Wanneer een web token gemaakt is het niet mogelijk om informatie erin te updaten
+                Om out te loggen op elk device is niet praktisch zonder te wachten op de vervaltijd.
+                Je kunt gemakkelijk meerdere servers in verschillende domainen met dezelfde tokens werken</p>
+            </article>
+        </section>
+    </main>
+    <aside class="col col-md-3 infront donker_blauw">
+      <div class="col sticky align-top text-center infront pt-5 h-25">
+          <br>
+          <br>
+          <br>
+          <h2><a href="contact.html">contact</a></h2>
+          <p>joran vercauteren<br>
+          <a href="mailto:joran.verc@gmail.com">joran.verc@gmail.com</a><br>+32 4 68 13 48 00
+          <br>
+          </p>
+      </div>
+      <br>
+  </aside>
+    </div>
+    <footer class="footer infront">
+        <p>&copy; 2024 joran vercauteren</p>
+    </footer>
+</body>
